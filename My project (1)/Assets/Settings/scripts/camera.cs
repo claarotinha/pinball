@@ -1,16 +1,15 @@
 using UnityEngine;
 
-public class camera : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public Transform target; // O objeto que a câmera vai seguir
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (target != null)
+        {
+            // Acompanha a posição X e Y do objeto, mas mantém a câmera no Z original
+            transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+        }
     }
 }
