@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ShooterSpring : MonoBehaviour
+public class lancador : MonoBehaviour
 {
     public SpringJoint2D mola;
     public Transform anchor;
@@ -13,12 +13,11 @@ public class ShooterSpring : MonoBehaviour
     {
         if (mola == null || anchor == null)
         {
-            Debug.LogError("ShooterSpring: faltando referência de mola ou anchor.");
+            Debug.LogError("mola: faltando referência de mola ou anchor.");
             enabled = false;
             return;
         }
 
-        // Conecta a mola ao ponto fixo
         mola.connectedBody = null;
         mola.autoConfigureConnectedAnchor = false;
         mola.connectedAnchor = anchor.position;
@@ -31,7 +30,6 @@ public class ShooterSpring : MonoBehaviour
         {
             isPulling = true;
 
-            // Move o shooter para baixo
             Vector2 alvo = (Vector2)anchor.position - Vector2.up * pullDistance;
             transform.position = Vector2.Lerp(transform.position, alvo, Time.deltaTime * pullSpeed);
         }
@@ -39,7 +37,7 @@ public class ShooterSpring : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.DownArrow) && isPulling)
         {
             isPulling = false;
-            // Ao soltar, a mola volta à posição inicial naturalmente pela física
+           
         }
     }
 }
