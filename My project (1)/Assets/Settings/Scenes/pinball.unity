@@ -4247,7 +4247,7 @@ PrefabInstance:
     - target: {fileID: 4910175816312109978, guid: 2d02d19d637b71442a02969a8b2633dc, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2579710992976715197, guid: fd836b269c628364787a4c02885ae2da, type: 3}
+      objectReference: {fileID: -9017367347557868931, guid: 26b9f97c266701f43a616c9c6524fbdc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4985,7 +4985,7 @@ PrefabInstance:
     - target: {fileID: 4910175816312109978, guid: 2d02d19d637b71442a02969a8b2633dc, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2579710992976715197, guid: fd836b269c628364787a4c02885ae2da, type: 3}
+      objectReference: {fileID: -9017367347557868931, guid: 26b9f97c266701f43a616c9c6524fbdc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5840,6 +5840,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8522736872043181747, guid: 7239ef6417c683646855bd5bfa73250d, type: 3}
+      propertyPath: m_ForceMagnitude
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8522736872043181747, guid: 7239ef6417c683646855bd5bfa73250d, type: 3}
+      propertyPath: m_ForceVariation
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6039,8 +6047,8 @@ PointEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_ForceMagnitude: 10
-  m_ForceVariation: 10
+  m_ForceMagnitude: 50
+  m_ForceVariation: 50
   m_DistanceScale: 1
   m_ForceSource: 0
   m_ForceTarget: 0
