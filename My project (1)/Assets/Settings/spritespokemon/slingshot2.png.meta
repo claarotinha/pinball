@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slingshot2_0: 8770602151424502423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

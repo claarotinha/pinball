@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fundo pinballtyler_0: 4447638740549410768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
